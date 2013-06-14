@@ -22,9 +22,9 @@ header('Content-type: application/json');
 */
 if ($DEMO) {
   $positions = array();
-  for ($i=1;$i<111;$i++) {
-  	$age = rand(40,50);
-  	if ($age<52) array_push($positions,(object) array('age'=>$age,'ll'=> sprintf('%f,%f',$LAT + rand(-12777,12777)/77777 ,  $LON + rand(-1888,1888)/7777) ,'nr'=>$i));
+  for ($i=1;$i<77;$i++) {
+  	$age = rand(10,50);
+  	if ($age<50) array_push($positions,(object) array('age'=>$age,'ll'=> sprintf('%f,%f',$LAT + rand(-12777,12777)/77777 ,  $LON + rand(-1888,1888)/7777) ,'nr'=>$i));
   }	
 
 } else {
